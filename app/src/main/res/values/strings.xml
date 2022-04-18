@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mifix</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="sourcing">Sourcing</string>
+    <string name="collection">Collection</string>
+    <string name="more">More</string>
+</resources>

@@ -1,0 +1,3261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:gravity="start|center"
+            android:text="Dashboard"
+            android:textColor="#1d1d1d"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:id="@+id/startLinear"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_rounded_background"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="start|center"
+                    android:text="2:32"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_rounded_background"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/clock_start" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stopLinear"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_rounded_background"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_rounded_background"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_clock" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="start|center"
+                    android:text="Start"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icon_search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp">
+
+        <ImageView
+            android:id="@+id/hdfcBankImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/hdfc" />
+
+        <ImageView
+            android:id="@+id/otherBankImage"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fedral_11"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bankNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:gravity="start|center"
+            android:text="HDFC - JLG"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_notification_direct" />
+
+        <ImageView
+            android:id="@+id/changeBankMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_more" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/disburseLinear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDisburse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:gravity="start|center"
+                android:text="Disburse"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start|center"
+                android:text="Today"
+                android:textAllCaps="true"
+                android:textColor="#a4a4a4"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDisbursePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:gravity="start|center"
+
+                        android:textColor="#323232"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="start|center"
+                        android:text="Amount"
+                        android:textColor="#a4a4a4"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDisburseCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:gravity="start|center"
+                        android:textColor="#323232"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="start|center"
+                        android:text="Loan"
+                        android:textColor="#a4a4a4"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/disburseBottomView"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collectionLinear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:gravity="start|center"
+                android:text="Collection"
+                android:textColor="#525252"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="start|center"
+                android:text="Today"
+                android:textAllCaps="true"
+                android:textColor="#a4a4a4"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCollectionPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:gravity="start|center"
+                        android:text="₹ 2,350"
+                        android:textColor="#5b5b5b"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="start|center"
+                        android:text="Amount"
+                        android:textColor="#a4a4a4"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCollectionCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:gravity="start|center"
+                        android:text="3"
+                        android:textColor="#5b5b5b"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="start|center"
+                        android:text="Customers"
+                        android:textColor="#a4a4a4"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/collectionBottomView"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/disburseDetailsLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:gravity="start|center"
+                            android:textColor="#323232"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/m_d_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:textColor="#323232"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Amount Disburse"
+                                    android:textColor="#a4a4a4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/m_d_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:textColor="#323232"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/m_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Loan"
+                                    android:textColor="#a4a4a4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/m_d_prediction"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:textColor="#323232"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Prediction"
+                                    android:textColor="#a4a4a4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#eeeeee"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="Target:"
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/m_d_target"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="13sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#f6f6f6" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/ic_clock_pending" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="Pending Status"
+                                android:textColor="#606060"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="180dp"
+                            android:layout_height="180dp">
+
+                            <lecho.lib.hellocharts.view.PieChartView
+                                android:id="@+id/pieChartView"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_customer_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_extrabold"
+                                    android:gravity="center"
+                                    android:textColor="#4f4f4f"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_extrabold"
+                                    android:gravity="center"
+                                    android:text="Total"
+                                    android:textColor="#b9b9b9"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="3dp"
+                                        android:src="@drawable/ic_arrow_up_by" />
+
+                                    <TextView
+                                        android:id="@+id/cust_percentage" android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="3dp"
+                                        android:fontFamily="@font/proxima_nova_semibold"
+                                        android:gravity="start|center"
+                                        android:text="+2%"
+                                        android:textColor="#00c300"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/verificationLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#ffe8ea"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_verification" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/verification_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="Verification"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/verification_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/verification_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/auditLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#ffb7be"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_audit" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/audit_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="Audit"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/audit_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/audit_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/productFulfillLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#ff949f"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_product_fullfilment" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/pf_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="Product Fulfilment"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/pf_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/pf_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/documentLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#ff4558"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_document_execution" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/de_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="Document Execution"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/de_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/de_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/approvalLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#e8152a"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_approval" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/approval_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="Approval"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/approval_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/approval_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/onBoardingLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#b51021"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_on_boarding_call" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/oc_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="On-boarding Call"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/oc_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/oc_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/loanUtilizationLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="#b51021"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_icon_loan_utilication" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/luc_title"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="Loan Utilization Check"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/luc_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/luc_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="start|center"
+                    android:text="Conversion Chart"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_month_disburs_chart"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+
+                                android:textColor="#323232"
+                                android:textSize="16sp" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:id="@+id/monthTypeLinear"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f7f7f7"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/frequency"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/proxima_nova_semibold"
+                                        android:gravity="start|center"
+                                        android:text="This month"
+                                        android:textColor="#555555"
+                                        android:textSize="13sp" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_fi_rr_calendar" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Total Disburse"
+                                android:textColor="#A4A4A4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/m_dcount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="0.7"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Disburse Count"
+                                    android:textColor="#7e7e7e"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/disburse_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:textColor="#494949"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="vs"
+                                android:textColor="#2f3a43  "
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Leads"
+                                    android:textColor="#7e7e7e"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/lead_count"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:textColor="#ff4558"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f7f7f7"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/proxima_nova_bold"
+                                        android:gravity="start|center"
+                                        android:text="Conversion %"
+                                        android:textColor="#7e7e7e"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tv_conversionpercentage"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginEnd="3dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/proxima_nova_semibold"
+                                            android:gravity="start|center"
+                                            android:textColor="#6a6a6a"
+                                            android:textSize="15sp" />
+
+                                        <ImageView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:src="@drawable/ic_down_arrow" />
+
+                                        <TextView
+                                            android:id="@+id/growth_percentage"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="3dp"
+                                            android:fontFamily="@font/proxima_nova_regular"
+                                            android:gravity="start|center"
+                                            android:text="-5%"
+                                            android:textColor="#c5171d"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <lecho.lib.hellocharts.view.LineChartView
+                            android:id="@+id/lineChartView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/target" />
+
+                            <TextView
+                                android:id="@+id/tv_target"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="2dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Prediction:"
+                                android:textColor="#8d8d8d"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/prediction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="2dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="start|center"
+                    android:text="Top 5 Peformers"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/proxima_nova_semibold"
+                            android:gravity="start|center"
+                            android:text="Disbursement"
+                            android:textColor="#222222"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Users"
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Cust."
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Amount"
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#f4f4f4" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/topPerformersRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/collectionDetailsLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:gravity="start|center"
+                            android:text="November Month"
+                            android:textColor="#323232"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:text="₹70,350"
+                                    android:textColor="#323232"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Amount Collected"
+                                    android:textColor="#a4a4a4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:text="25"
+                                    android:textColor="#323232"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Customers"
+                                    android:textColor="#a4a4a4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:text="96%"
+                                    android:textColor="#323232"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Prediction"
+                                    android:textColor="#a4a4a4"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#eeeeee"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="Target:"
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="₹ 1,00,000"
+                                android:textColor="#323232"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/ic_icon_collection"
+                                card_view:tint="#606060" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="Collection Breakup"
+                                android:textColor="#606060"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="180dp"
+                            android:layout_height="180dp">
+
+                            <lecho.lib.hellocharts.view.PieChartView
+                                android:id="@+id/collectionPieChartView"
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_extrabold"
+                                    android:gravity="center"
+                                    android:text="2.3K  "
+                                    android:textColor="#4f4f4f"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_extrabold"
+                                    android:gravity="center"
+                                    android:text="Total"
+                                    android:textColor="#b9b9b9"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="3dp"
+                                        android:src="@drawable/ic_arrow_up_red" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="3dp"
+                                        android:fontFamily="@font/proxima_nova_semibold"
+                                        android:gravity="start|center"
+                                        android:text="+2%"
+                                        android:textColor="#e8152a"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="start|center"
+                                android:text="TYPE"
+                                android:textColor="#aaaaaa"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:gravity="start|center"
+                                android:text="COUNT"
+                                android:textColor="#aaaaaa"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:gravity="start|center"
+                                android:text="%"
+                                android:textColor="#aaaaaa"
+                                android:textSize="11sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/otrLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:focusable="false"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardElevation="0dp"
+                                    card_view:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:layout_width="5dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:background="#ffe8ea"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:text="OTR"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="362"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="16%"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/linearSma0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:focusable="false"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardElevation="0dp"
+                                    card_view:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:layout_width="5dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:background="#ff949f"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:text="SMA 0"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="172"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="12%"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/smaDropDownLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linear1_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:focusable="false"
+                                        android:visibility="invisible"
+                                        card_view:cardCornerRadius="5dp"
+                                        card_view:cardElevation="0dp"
+                                        card_view:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="5dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="#ff949f"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:fontFamily="@font/proxima_nova_regular"
+                                        android:gravity="start|center"
+                                        android:text="01 - 03"
+                                        android:textColor="#222222"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="41"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="23%"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/ic_arrow_down"
+                                    android:visibility="invisible" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#ffffff" />
+
+                            <LinearLayout
+                                android:id="@+id/linear4_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:focusable="false"
+                                        android:visibility="invisible"
+                                        card_view:cardCornerRadius="5dp"
+                                        card_view:cardElevation="0dp"
+                                        card_view:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="5dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="#ff949f"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:fontFamily="@font/proxima_nova_regular"
+                                        android:gravity="start|center"
+                                        android:text="04 - 10"
+                                        android:textColor="#222222"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="73"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="42%"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/ic_arrow_down"
+                                    android:visibility="invisible" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#ffffff" />
+
+                            <LinearLayout
+                                android:id="@+id/linear11_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:focusable="false"
+                                        android:visibility="invisible"
+                                        card_view:cardCornerRadius="5dp"
+                                        card_view:cardElevation="0dp"
+                                        card_view:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="5dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="#ff949f"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:fontFamily="@font/proxima_nova_regular"
+                                        android:gravity="start|center"
+                                        android:text="11 - 20"
+                                        android:textColor="#222222"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="23"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="13%"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/ic_arrow_down"
+                                    android:visibility="invisible" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#ffffff" />
+
+                            <LinearLayout
+                                android:id="@+id/linear21_30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:focusable="false"
+                                        android:visibility="invisible"
+                                        card_view:cardCornerRadius="5dp"
+                                        card_view:cardElevation="0dp"
+                                        card_view:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="5dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:background="#ff949f"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+
+                                        </LinearLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:fontFamily="@font/proxima_nova_regular"
+                                        android:gravity="start|center"
+                                        android:text="21 - 30"
+                                        android:textColor="#222222"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="34"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="22%"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/ic_arrow_down"
+                                    android:visibility="invisible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#ffffff" />
+
+                        <LinearLayout
+                            android:id="@+id/linearSma1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:focusable="false"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardElevation="0dp"
+                                    card_view:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:layout_width="5dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:background="#e8152a"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:text="SMA 1"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="632"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="37%"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/linearSma2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:focusable="false"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardElevation="0dp"
+                                    card_view:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:layout_width="5dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:background="#b51021"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:text="SMA 2"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="392"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="22%"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#f6f6f6" />
+
+                        <LinearLayout
+                            android:id="@+id/linearSma3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:focusable="false"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardElevation="0dp"
+                                    card_view:cardUseCompatPadding="true">
+
+                                    <LinearLayout
+                                        android:layout_width="5dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="center"
+                                        android:background="#8c0d19"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:text="SMA 3"
+                                    android:textColor="#222222"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="423"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:text="13%"
+                                android:textColor="#323232"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/ic_arrow_down"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="start|center"
+                    android:text="Collection Chart"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_month_chart"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1.5"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:gravity="start|center"
+                                android:textColor="#323232"
+                                android:textSize="16sp" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:id="@+id/collectionMonthTypeLinear"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f7f7f7"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/proxima_nova_semibold"
+                                        android:gravity="start|center"
+                                        android:text="This month"
+                                        android:textColor="#555555"
+                                        android:textSize="13sp" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_fi_rr_calendar" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Total Collection"
+                                android:textColor="#A4A4A4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/proxima_nova_semibold"
+                                android:gravity="start|center"
+                                android:text="₹ 80,000"
+                                android:textColor="#323232"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="0.7"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Collection"
+                                    android:textColor="#7e7e7e"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:gravity="start|center"
+                                    android:text="₹ 6,020"
+                                    android:textColor="#2f3a43"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="vs"
+                                android:textColor="#2f3a43"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:gravity="start|center"
+                                    android:text="Target"
+                                    android:textColor="#7e7e7e"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/proxima_nova_semibold"
+                                    android:gravity="start|center"
+                                    android:text="₹ 4,500"
+                                    android:textColor="#ff4558"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                card_view:cardCornerRadius="5dp"
+                                card_view:cardElevation="0dp"
+                                card_view:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#f7f7f7"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="8dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/proxima_nova_bold"
+                                        android:gravity="start|center"
+                                        android:text="Achievement %"
+                                        android:textColor="#7e7e7e"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginEnd="3dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/proxima_nova_semibold"
+                                            android:gravity="start|center"
+                                            android:text="150.4%"
+                                            android:textColor="#6a6a6a"
+                                            android:textSize="15sp" />
+
+                                        <ImageView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="3dp"
+                                            android:layout_marginEnd="3dp"
+                                            android:src="@drawable/ic_arrow_up_by" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="3dp"
+                                            android:fontFamily="@font/proxima_nova_regular"
+                                            android:gravity="start|center"
+                                            android:text="+5%"
+                                            android:textColor="#0ac307"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <lecho.lib.hellocharts.view.LineChartView
+                            android:id="@+id/collectionLineChartView"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/target" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="₹ 50,000"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="2dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Prediction:"
+                                android:textColor="#8d8d8d"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="2dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="96%"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:gravity="start|center"
+                    android:text="Top 5 Peformers"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:focusable="false"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/proxima_nova_semibold"
+                            android:gravity="start|center"
+                            android:text="Collection"
+                            android:textColor="#222222"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Users"
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/proxima_nova_regular"
+                                android:gravity="start|center"
+                                android:text="Amount"
+                                android:textColor="#a4a4a4"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#f4f4f4" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/collectionTopPerformersRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

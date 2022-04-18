@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorSelectedDate">#F74464</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">#ABE3DB</color>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ff4558</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorYellow">#FDBA1A</color>
+    <color name="colorBorder">#ABE3DB</color>
+    <color name="colorEditTextHint">#92C8C0</color>
+
+    <color name="bottom_menu_background">#1d1d1d</color>
+
+    <color name="colorPrimaryTransparent">#6600A58C</color>
+
+    <color name="colorStart">#F98AFD</color>
+    <color name="colorEnd">#ADE1FD</color>
+    <color name="blueColor">#5FC7FF</color>
+    <color name="colorEditText">#F8FAFC</color>
+    <color name="colorDeclineBtn">#E5E5E5</color>
+    <color name="colorAddImage">#E2E2E2</color>
+
+    <color name="colorCategoryUnselected">#EEEEEE</color>
+    <color name="colorTabBackground">#EEEEF0</color>
+    <color name="colorDeleteFavorite">#1A00A58C</color>
+
+    <color name="colorChangeBtn">#6A9BB5</color>
+    <color name="colorLightText">#3C3A36</color>
+    <color name="colorPending">#FFCE00</color>
+    <color name="colorComplete">#84CB4D</color>
+    <color name="colorAccepted">#FFA06A</color>
+    <color name="colorRejected">#DC1229</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlue">#0470B8</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorSkyBlue">#0080FF</color>
+    <color name="colorDarkGreen">#45664b</color>
+    <color name="colorTransperante">#00000000</color>
+    <color name="colorSelected">#bfbc99</color>
+    <color name="colorGray">#C0C0C0</color>
+    <color name="colorLightGray">#c7c7c7</color>
+    <color name="pink">#F93A52</color>
+    <color name="colorLightGreen">#3DB9A6</color>
+    <color name="colorOrange">#E9552C</color>
+    <color name="colorDarkGray">#4D4D4D</color>
+    <color name="colorTransparentBlack">#80979595</color>
+    <color name="colorTransparentPrimary">#E845664B</color>
+    <color name="colorTransparentPrimaryDark">#601F3623</color>
+    <color name="colorTransparentGay">#DDFFFFFF</color>
+    <color name="colorGreenText">#0CA57D</color>
+    <color name="colorGreenButton">#1EDCAA</color>
+    <color name="colorGreenTransparent">#e8fbf6</color>
+    <color name="colorLightGary">#989898</color>
+    <color name="colorNoPlate">#dee7e6</color>
+    <color name="colorLightRed">#F84F4F</color>
+    <color name="orangeColor">#FF6A6A</color>
+
+    <color name="color_blue_qb">#046ad0</color>
+    <color name="color_light_blue_qb">#87cefa</color>
+    <color name="color_green_qb">#4ad24d</color>
+    <color name="color_grey">#d3d3d3</color>
+
+    <color name="grey">#606060</color>
+    <color name="blue">#1FCECB</color>
+    <color name="red">#C10404</color>
+    <color name="green">#7DB927</color>
+    <color name="dark_green">#2E7302</color>
+    <color name="white_green">#A9FF80</color>
+    <color name="black_transparent_30">#30000000</color>
+    <color name="black_transparent_50">#50000000</color>
+    <color name="white_transparent_80">#80FFFFFF</color>
+    <color name="white_transparent_50">#50FFFFFF</color>
+    <color name="grey_transparent_50">#50606060</color>
+    <color name="grey_transparent_20">#20606060</color>
+    <color name="grey_transparent_10">#10606060</color>
+    <color name="color_blue_accent">#0088e7</color>
+    <color name="toolbar_dropshadow_end_color">#88333333</color>
+    <color name="toolbar_subtitle_color">#6e6e6e</color>
+    <color name="toolbar_title_color">#1f1f1f</color>
+
+    <color name="background_app_color">#ffffff</color>
+    <color name="background_color_selected_user_item">#3C3F41</color>
+    <color name="background_color_normal_user_item">#ffffff</color>
+    <color name="background_fragment_conversation">#2b2a2a</color>
+    <color name="icon_background_color_selected_user">#959595</color>
+
+    <color name="button_end_call_normal_color">#ff2744</color>
+    <color name="button_end_call_pressed_color">#FC5876</color>
+    <color name="toggle_button_background_normal">#cc212121</color>
+    <color name="toggle_button_background_checked">#ccffffff</color>
+
+    <color name="text_color_outgoing_opponents_names_audio_call">#1f1f1f</color>
+    <color name="text_color_call_type">#6e6e6e</color>
+    <color name="text_color_also_on_call">@color/text_color_call_type</color>
+    <color name="text_color_other_inc_users">#1f1f1f</color>
+    <color name="text_color_caller_name">#1f1f1f</color>
+    <color name="text_color_medium_grey">#b1b1b1</color>
+    <color name="text_color_light_grey">#dedede</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_primary">#212121</color>
+    <color name="text_color_dark_grey">#6e6e6e</color>
+
+    <color name="selected_list_item_color">#e0e0e0</color>
+
+    <color name="progress_center">#20000000</color>
+    <color name="progress_end">#30000000</color>
+    <color name="progress_start">#20000000</color>
+    <color name="progress_secondary_center">#234</color>
+    <color name="progress_secondary_end">#a24</color>
+    <color name="progress_secondary_start">#234</color>
+
+    <color name="selected_color">#ff4558</color>
+    <color name="non_selected_color">#373737</color>
+
+</resources>

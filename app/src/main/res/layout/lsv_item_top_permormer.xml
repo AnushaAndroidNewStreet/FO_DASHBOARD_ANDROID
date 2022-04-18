@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userProfileImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user1"
+            app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start|center"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:text="Angelina Kilback"/>
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start|center"
+                android:textColor="#888888"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="Kanakapura"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:gravity="start|center"
+        android:text="35"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#323232"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:textColor="#323232"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="₹2,230"
+        android:textSize="14sp"/>
+
+</LinearLayout>

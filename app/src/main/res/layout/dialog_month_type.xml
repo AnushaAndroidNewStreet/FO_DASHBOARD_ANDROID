@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <LinearLayout
+        android:id="@+id/thisMonthLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtThisMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:textColor="#ff4558"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:text="This Month"
+            android:fontFamily="@font/proxima_nova_bold"/>
+
+        <ImageView
+            android:id="@+id/thisMonthImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/tick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastMonthLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtLastMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:textColor="#373737"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:text="Last Month"
+            android:fontFamily="@font/proxima_nova_bold"/>
+
+        <ImageView
+            android:id="@+id/lastMonthImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@drawable/tick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thisQuarter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtThisQuarter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:textColor="#373737"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:text="This Quarter"
+            android:fontFamily="@font/proxima_nova_bold"/>
+
+        <ImageView
+            android:id="@+id/thisQuarterImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@drawable/tick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lastQuarterLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtLastQuarter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:textColor="#373737"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:text="Last Quarter  "
+            android:fontFamily="@font/proxima_nova_bold"/>
+
+        <ImageView
+            android:id="@+id/lastQuarterImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@drawable/tick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customRangeLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtCustomRange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:textColor="#373737"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:text="Custom Range"
+            android:fontFamily="@font/proxima_nova_bold"/>
+
+        <ImageView
+            android:id="@+id/customRangeImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:src="@drawable/tick"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:textColor="#e8152a"
+        android:textSize="17dp"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:fontFamily="@font/proxima_nova_regular"/>
+
+</LinearLayout>
